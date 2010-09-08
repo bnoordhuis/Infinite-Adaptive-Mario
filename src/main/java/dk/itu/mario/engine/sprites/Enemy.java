@@ -434,14 +434,8 @@ public class Enemy extends Sprite
 			int xPixel = (int) (xOld + (x - xOld) * alpha) - xPicO;
 			int yPixel = (int) (yOld + (y - yOld) * alpha) - yPicO;
 
-			if (type == Enemy.ENEMY_GREEN_KOOPA || type == Enemy.ENEMY_RED_KOOPA)
-			{
-				og.drawImage(sheet[wingTime / 4 % 2][4], xPixel + (xFlipPic ? wPic : 0) + (xFlipPic ? 10 : -10), yPixel + (yFlipPic ? hPic : 0) - 10, xFlipPic ? -wPic : wPic, yFlipPic ? -hPic : hPic, null);
-			}
-			else
-			{
-				og.drawImage(sheet[wingTime / 4 % 2][4], xPixel + (xFlipPic ? wPic : 0) + (xFlipPic ? 10 : -10), yPixel + (yFlipPic ? hPic : 0) - 8, xFlipPic ? -wPic : wPic, yFlipPic ? -hPic : hPic, null);
-			}
+			final int n = (type == Enemy.ENEMY_GREEN_KOOPA || type == Enemy.ENEMY_RED_KOOPA) ? 10 : 8;
+			og.drawImage(sheet[wingTime / 4 % 2][4], xPixel + (xFlipPic ? wPic : 0) + (xFlipPic ? 10 : -10), yPixel + (yFlipPic ? hPic : 0) - n, xFlipPic ? -wPic : wPic, yFlipPic ? -hPic : hPic, null);
 		}
 	}
 }
