@@ -78,8 +78,7 @@ public class GamePlay implements Serializable {
 			in = new ObjectInputStream(fis);
 			gp = (GamePlay)in.readObject();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			// silently ignore
 		}
 		return gp;
 	}
