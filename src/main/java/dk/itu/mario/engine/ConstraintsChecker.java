@@ -1,8 +1,8 @@
 package dk.itu.mario.engine;
 
-import dk.itu.mario.level.Level;
 import dk.itu.mario.MarioInterface.Constraints;
 import dk.itu.mario.engine.sprites.SpriteTemplate;
+import dk.itu.mario.level.Level;
 
 public final class ConstraintsChecker {
 

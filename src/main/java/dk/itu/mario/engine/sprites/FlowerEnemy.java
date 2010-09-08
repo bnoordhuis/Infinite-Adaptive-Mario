@@ -1,8 +1,6 @@
 package dk.itu.mario.engine.sprites;
 
-import dk.itu.mario.level.Level;
 import dk.itu.mario.scene.LevelScene;
-import dk.itu.mario.engine.sprites.*;
 
 public class FlowerEnemy extends Enemy
 {

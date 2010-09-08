@@ -1,8 +1,10 @@
 package dk.itu.mario.engine.sonar.mixer;
 
-import java.util.*;
-
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
 
 import dk.itu.mario.engine.sonar.SoundListener;
 import dk.itu.mario.engine.sonar.SoundProducer;

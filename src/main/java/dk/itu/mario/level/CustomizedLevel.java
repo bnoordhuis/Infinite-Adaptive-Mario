@@ -5,9 +5,8 @@ import java.util.Random;
 import dk.itu.mario.MarioInterface.Constraints;
 import dk.itu.mario.MarioInterface.GamePlay;
 import dk.itu.mario.MarioInterface.LevelInterface;
-import dk.itu.mario.engine.sprites.SpriteTemplate;
 import dk.itu.mario.engine.sprites.Enemy;
-import dk.itu.mario.engine.LevelFactory;
+import dk.itu.mario.engine.sprites.SpriteTemplate;
 
 public class CustomizedLevel extends Level implements LevelInterface {
 

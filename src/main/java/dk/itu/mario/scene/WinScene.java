@@ -4,10 +4,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 
-import dk.itu.mario.engine.sprites.Mario;
-
-import dk.itu.mario.engine.MarioComponent;
 import dk.itu.mario.engine.Art;
+import dk.itu.mario.engine.sprites.Mario;
 
 public class WinScene extends Scene
 {

@@ -1,7 +1,6 @@
 package dk.itu.mario.engine.sprites;
 
 import dk.itu.mario.engine.Art;
-import dk.itu.mario.level.Level;
 
 
 

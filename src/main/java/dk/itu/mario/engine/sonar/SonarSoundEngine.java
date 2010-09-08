@@ -3,14 +3,17 @@ package dk.itu.mario.engine.sonar;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-import javax.sound.sampled.*;
-
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Line;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.Mixer;
+import javax.sound.sampled.SourceDataLine;
 
 import dk.itu.mario.engine.sonar.mixer.ListenerMixer;
-
+import dk.itu.mario.engine.sonar.sample.SampleLoader;
 import dk.itu.mario.engine.sonar.sample.SamplePlayer;
 import dk.itu.mario.engine.sonar.sample.SonarSample;
-import dk.itu.mario.engine.sonar.sample.SampleLoader;
 
 
 

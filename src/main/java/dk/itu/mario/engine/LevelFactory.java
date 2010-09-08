@@ -1,6 +1,8 @@
 package dk.itu.mario.engine;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 import dk.itu.mario.level.Level;
 

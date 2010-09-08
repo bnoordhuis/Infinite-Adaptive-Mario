@@ -1,8 +1,13 @@
 package dk.itu.mario.engine;
 
-import java.awt.*;
+import java.awt.AlphaComposite;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.GraphicsConfiguration;
+import java.awt.Image;
+import java.awt.Transparency;
 import java.util.Random;
-
 
 import dk.itu.mario.level.Level;
 

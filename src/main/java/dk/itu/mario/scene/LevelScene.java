@@ -5,23 +5,30 @@ import java.awt.Graphics;
 import java.awt.GraphicsConfiguration;
 import java.awt.Image;
 import java.awt.event.MouseEvent;
-import java.io.*;
 import java.text.DecimalFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import benweber.CustomizedLevel;
-
-
 import dk.itu.mario.engine.Art;
 import dk.itu.mario.engine.BgRenderer;
 import dk.itu.mario.engine.DataRecorder;
 import dk.itu.mario.engine.LevelRenderer;
 import dk.itu.mario.engine.MarioComponent;
-import dk.itu.mario.level.Level;
-import dk.itu.mario.level.RandomLevel;
-
 import dk.itu.mario.engine.sonar.FixedSoundSource;
-import dk.itu.mario.engine.sprites.*;
+import dk.itu.mario.engine.sprites.BulletBill;
+import dk.itu.mario.engine.sprites.CoinAnim;
+import dk.itu.mario.engine.sprites.FireFlower;
+import dk.itu.mario.engine.sprites.Fireball;
+import dk.itu.mario.engine.sprites.Mario;
+import dk.itu.mario.engine.sprites.Mushroom;
+import dk.itu.mario.engine.sprites.Particle;
+import dk.itu.mario.engine.sprites.Shell;
+import dk.itu.mario.engine.sprites.Sparkle;
+import dk.itu.mario.engine.sprites.Sprite;
+import dk.itu.mario.engine.sprites.SpriteContext;
+import dk.itu.mario.engine.sprites.SpriteTemplate;
+import dk.itu.mario.level.Level;
 
 
 public class LevelScene extends Scene implements SpriteContext

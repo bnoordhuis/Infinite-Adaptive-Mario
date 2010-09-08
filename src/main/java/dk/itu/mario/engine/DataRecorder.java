@@ -1,17 +1,15 @@
 package dk.itu.mario.engine;
 
 import dk.itu.mario.MarioInterface.GamePlay;
-import dk.itu.mario.engine.sprites.SpriteTemplate;
 import dk.itu.mario.engine.sprites.BulletBill;
 import dk.itu.mario.engine.sprites.Enemy;
+import dk.itu.mario.engine.sprites.FlowerEnemy;
 import dk.itu.mario.engine.sprites.Mario;
 import dk.itu.mario.engine.sprites.Shell;
 import dk.itu.mario.engine.sprites.Sprite;
-
-import dk.itu.mario.level.Level;
+import dk.itu.mario.engine.sprites.SpriteTemplate;
 import dk.itu.mario.level.RandomLevel;
 import dk.itu.mario.scene.LevelScene;
-import dk.itu.mario.engine.sprites.FlowerEnemy;
 
 public class DataRecorder {
 

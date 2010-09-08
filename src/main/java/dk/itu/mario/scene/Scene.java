@@ -3,7 +3,6 @@ package dk.itu.mario.scene;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 
-
 import dk.itu.mario.engine.sonar.SonarSoundEngine;
 import dk.itu.mario.engine.sonar.SoundListener;
 

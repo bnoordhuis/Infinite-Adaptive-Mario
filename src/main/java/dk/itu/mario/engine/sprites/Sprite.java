@@ -3,10 +3,6 @@ package dk.itu.mario.engine.sprites;
 import java.awt.Graphics;
 import java.awt.Image;
 
-
-
-
-
 import dk.itu.mario.engine.sonar.SoundSource;
 
 public class Sprite implements SoundSource

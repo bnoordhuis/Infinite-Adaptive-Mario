@@ -5,7 +5,6 @@ package dk.itu.mario.engine.sprites;
 
 
 import dk.itu.mario.engine.Art;
-import dk.itu.mario.engine.DataRecorder;
 import dk.itu.mario.engine.sonar.FixedSoundSource;
 import dk.itu.mario.level.Level;
 import dk.itu.mario.scene.LevelScene;

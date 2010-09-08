@@ -1,35 +1,28 @@
 package dk.itu.mario.engine;
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.GraphicsConfiguration;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.image.*;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
+import java.awt.image.VolatileImage;
 import java.util.Random;
 
 import javax.sound.sampled.LineUnavailableException;
-import javax.swing.*;
+import javax.swing.JComponent;
 
 import benweber.CustomizedLevel;
-
-
-import dk.itu.mario.level.Level;
-import dk.itu.mario.scene.LevelScene;
-import dk.itu.mario.scene.LevelSceneTest;
-import dk.itu.mario.scene.LoseScene;
-import dk.itu.mario.scene.Scene;
-import dk.itu.mario.scene.WinScene;
-
 import dk.itu.mario.engine.sonar.FakeSoundEngine;
 import dk.itu.mario.engine.sonar.SonarSoundEngine;
 import dk.itu.mario.engine.sprites.Mario;
+import dk.itu.mario.scene.LevelScene;
+import dk.itu.mario.scene.LevelSceneTest;
+import dk.itu.mario.scene.Scene;
 
 public class MarioComponent extends JComponent implements Runnable, KeyListener, FocusListener, MouseListener
 	{

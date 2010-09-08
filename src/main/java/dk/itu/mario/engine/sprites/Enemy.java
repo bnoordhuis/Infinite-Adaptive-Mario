@@ -2,9 +2,7 @@ package dk.itu.mario.engine.sprites;
 
 import java.awt.Graphics;
 
-
 import dk.itu.mario.engine.Art;
-import dk.itu.mario.level.Level;
 import dk.itu.mario.scene.LevelScene;
 
 
