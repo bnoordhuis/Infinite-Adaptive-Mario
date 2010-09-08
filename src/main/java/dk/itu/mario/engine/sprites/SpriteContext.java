@@ -13,6 +13,6 @@ package dk.itu.mario.engine.sprites;
  * @version 1.0
  */
 public interface SpriteContext {
-    public void addSprite(Sprite sprite);
-    public void removeSprite(Sprite sprite);
+	public void addSprite(Sprite sprite);
+	public void removeSprite(Sprite sprite);
 }

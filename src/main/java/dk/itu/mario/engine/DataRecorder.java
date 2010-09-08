@@ -226,11 +226,11 @@ public class DataRecorder {
 			endTime();
 
 			switch(direction){
-				case 1:
-					endRightMoveRecord();
+			case 1:
+				endRightMoveRecord();
 				break;
-				case -1:
-					endLeftMoveRecord();
+			case -1:
+				endLeftMoveRecord();
 				break;
 			}
 
@@ -525,9 +525,9 @@ public class DataRecorder {
 
 	private void printSwitching(){
 		printStart("Switch Variables");
-		System.out.println("Time Spent Moving Right: " + convertTime(totalRightTime) + " ("+Math.round((double)convertTime(totalRightTime)/(double)convertTime(totalTime)*(double)100)+"%)");
-		System.out.println("Time Spent Moving Left: " + convertTime(totalLeftTime) + " ("+Math.round((double)convertTime(totalLeftTime)/(double)convertTime(totalTime)*(double)100)+"%)");
-		System.out.println("Time Spent Standing Still: " + (convertTime(totalTime)-convertTime(totalLeftTime)-convertTime(totalRightTime)) + " ("+Math.round((double)(convertTime(totalTime)-convertTime(totalLeftTime)-convertTime(totalRightTime))/(double)convertTime(totalTime)*(double)100)+"%)");
+		System.out.println("Time Spent Moving Right: " + convertTime(totalRightTime) + " ("+Math.round((double)convertTime(totalRightTime)/(double)convertTime(totalTime)*100)+"%)");
+		System.out.println("Time Spent Moving Left: " + convertTime(totalLeftTime) + " ("+Math.round((double)convertTime(totalLeftTime)/(double)convertTime(totalTime)*100)+"%)");
+		System.out.println("Time Spent Standing Still: " + (convertTime(totalTime)-convertTime(totalLeftTime)-convertTime(totalRightTime)) + " ("+Math.round((double)(convertTime(totalTime)-convertTime(totalLeftTime)-convertTime(totalRightTime))/(double)convertTime(totalTime)*100)+"%)");
 
 		printEnd();
 	}
@@ -535,7 +535,7 @@ public class DataRecorder {
 	private void printJump(){
 		printStart("Jump Variables");
 		System.out.println("Number of Times Jumped: " + timesJumped);
-		System.out.println("Time Spent Jumping: " + convertTime(totalJumpTime) + " ("+Math.round((double)convertTime(totalJumpTime)/(double)convertTime(totalTime)*(double)100)+"%)");
+		System.out.println("Time Spent Jumping: " + convertTime(totalJumpTime) + " ("+Math.round((double)convertTime(totalJumpTime)/(double)convertTime(totalTime)*100)+"%)");
 		printEnd();
 	}
 
@@ -549,7 +549,7 @@ public class DataRecorder {
 	private void printDuck(){
 		printStart("Duck Variables");
 		System.out.println("Number of Times Ducked: " + timesDucked);
-		System.out.println("Time Spent Ducking: " + convertTime(totalDuckTime) + " ("+Math.round((double)convertTime(totalDuckTime)/(double)convertTime(totalTime)*(double)100)+"%)");
+		System.out.println("Time Spent Ducking: " + convertTime(totalDuckTime) + " ("+Math.round((double)convertTime(totalDuckTime)/(double)convertTime(totalTime)*100)+"%)");
 		printEnd();
 	}
 
@@ -568,35 +568,35 @@ public class DataRecorder {
 			String type = "";
 
 			switch(i){
-				case SpriteTemplate.RED_TURTLE:
-					type = "Red Koopa";
+			case SpriteTemplate.RED_TURTLE:
+				type = "Red Koopa";
 				break;
-				case SpriteTemplate.GREEN_TURTLE:
-					type = "Green Koopa";
+			case SpriteTemplate.GREEN_TURTLE:
+				type = "Green Koopa";
 				break;
-				case SpriteTemplate.GOOMPA:
-					type = "Goompa";
+			case SpriteTemplate.GOOMPA:
+				type = "Goompa";
 				break;
-				case SpriteTemplate.ARMORED_TURTLE:
-					type = "Spikey Turtle";
+			case SpriteTemplate.ARMORED_TURTLE:
+				type = "Spikey Turtle";
 				break;
-				case SpriteTemplate.JUMP_FLOWER:
-					type = "Jumping Flower";
+			case SpriteTemplate.JUMP_FLOWER:
+				type = "Jumping Flower";
 				break;
-				case SpriteTemplate.CANNON_BALL:
-					type = "Cannon Ball";
+			case SpriteTemplate.CANNON_BALL:
+				type = "Cannon Ball";
 				break;
-				case SpriteTemplate.CHOMP_FLOWER:
-					type = "Chomping Flower";
+			case SpriteTemplate.CHOMP_FLOWER:
+				type = "Chomping Flower";
 				break;
-				case 7:
-					type = "Time";
+			case 7:
+				type = "Time";
 				break;
-				case 8:
-					type = "Hole";
+			case 8:
+				type = "Hole";
 				break;
-				case 9:
-					type = "Shell";
+			case 9:
+				type = "Shell";
 				break;
 			}
 
@@ -618,27 +618,27 @@ public class DataRecorder {
 			String type = "";
 
 			switch(i){
-				case SpriteTemplate.RED_TURTLE:
-					type = "Red Koopa";
+			case SpriteTemplate.RED_TURTLE:
+				type = "Red Koopa";
 
 				break;
-				case SpriteTemplate.GREEN_TURTLE:
-					type = "Green Koopa";
+			case SpriteTemplate.GREEN_TURTLE:
+				type = "Green Koopa";
 				break;
-				case SpriteTemplate.GOOMPA:
-					type = "Goompa";
+			case SpriteTemplate.GOOMPA:
+				type = "Goompa";
 				break;
-				case SpriteTemplate.ARMORED_TURTLE:
-					type = "Spikey Turtle";
+			case SpriteTemplate.ARMORED_TURTLE:
+				type = "Spikey Turtle";
 				break;
-				case SpriteTemplate.JUMP_FLOWER:
-					type = "Jumping Flower";
+			case SpriteTemplate.JUMP_FLOWER:
+				type = "Jumping Flower";
 				break;
-				case SpriteTemplate.CANNON_BALL:
-					type = "Cannon Ball";
+			case SpriteTemplate.CANNON_BALL:
+				type = "Cannon Ball";
 				break;
-				case SpriteTemplate.CHOMP_FLOWER:
-					type = "Chomping Flower";
+			case SpriteTemplate.CHOMP_FLOWER:
+				type = "Chomping Flower";
 				break;
 			}
 
@@ -679,7 +679,7 @@ public class DataRecorder {
 	}
 
 	public void fillGamePlayMetrics(RandomLevel level){
-        GamePlay gpm = new GamePlay();
+		GamePlay gpm = new GamePlay();
 		gpm.completionTime = getCompletionTime();
 		gpm.totalTime = getTotalTime();////sums all the time, including from previous games if player died
 		gpm.jumpsNumber = getTimesJumped();
@@ -728,7 +728,7 @@ public class DataRecorder {
 		gpm.CannonBallKilled = kills[SpriteTemplate.CANNON_BALL];
 		gpm.ChompFlowersKilled = kills[SpriteTemplate.CHOMP_FLOWER];
 		gpm.write("player.txt");
-		
+
 	}
 
 
@@ -839,7 +839,7 @@ public class DataRecorder {
 	 * @return
 	 */
 	public double tc(){
-		return (double)getTotalTime();
+		return getTotalTime();
 	}
 
 	public double tL(){

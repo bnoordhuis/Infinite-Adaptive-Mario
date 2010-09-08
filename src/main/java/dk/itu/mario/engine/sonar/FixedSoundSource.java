@@ -21,13 +21,13 @@ public class FixedSoundSource implements SoundSource
 		this.y = soundSource.getY(1);
 	}
 
-    public float getX(float alpha)
-    {
-        return x;
-    }
+	public float getX(float alpha)
+	{
+		return x;
+	}
 
-    public float getY(float alpha)
-    {
-        return y;
-    }
+	public float getY(float alpha)
+	{
+		return y;
+	}
 }

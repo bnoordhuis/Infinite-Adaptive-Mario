@@ -17,44 +17,44 @@ public class SpriteTemplate
 
 	public boolean hasSpawned = false;
 
-    public int lastVisibleTick = -1;
-    public Sprite sprite;
-    public boolean isDead = false;
-    private boolean winged;
+	public int lastVisibleTick = -1;
+	public Sprite sprite;
+	public boolean isDead = false;
+	private boolean winged;
 
-    public int type;
-    public int direction = 1;
+	public int type;
+	public int direction = 1;
 
-    public SpriteTemplate(int type, boolean winged)
-    {
-        this.type = type;
-        this.winged = winged;
-    }
+	public SpriteTemplate(int type, boolean winged)
+	{
+		this.type = type;
+		this.winged = winged;
+	}
 
-    public void spawn(LevelScene world, int x, int y, int dir)
-    {
-        if (isDead || enemiesSpawned >= enemiesMax) return;
+	public void spawn(LevelScene world, int x, int y, int dir)
+	{
+		if (isDead || enemiesSpawned >= enemiesMax) return;
 
-        if (type==Enemy.ENEMY_FLOWER)
-        {
-            sprite = new FlowerEnemy(world, x*16+15, y*16+24);
-        }
-        else
-        {
-            sprite = new Enemy(world, x*16+8, y*16+15, dir, type, winged);
-        }
+		if (type==Enemy.ENEMY_FLOWER)
+		{
+			sprite = new FlowerEnemy(world, x*16+15, y*16+24);
+		}
+		else
+		{
+			sprite = new Enemy(world, x*16+8, y*16+15, dir, type, winged);
+		}
 
-        //correct for flipping
-        if(direction == -1){
-        	sprite.x -= 14;
-        }
+		//correct for flipping
+		if(direction == -1){
+			sprite.x -= 14;
+		}
 
-        sprite.spriteTemplate = this;
-        world.addSprite(sprite);
+		sprite.spriteTemplate = this;
+		world.addSprite(sprite);
 
-        if(!hasSpawned)
-        	enemiesSpawned++;
+		if(!hasSpawned)
+			enemiesSpawned++;
 
-        hasSpawned = true;
-    }
+		hasSpawned = true;
+	}
 }

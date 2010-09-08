@@ -9,9 +9,9 @@ import dk.itu.mario.engine.sonar.SoundListener;
 
 public abstract class Scene implements SoundListener
 {
-    public SonarSoundEngine sound;
-    public static boolean[] keys = new boolean[16];
-    
+	public SonarSoundEngine sound;
+	public static boolean[] keys = new boolean[16];
+
 	public static final int COLOR_BLACK = 0;
 	public static final int COLOR_RED = 1;
 	public static final int COLOR_GREEN = 2;
@@ -21,22 +21,22 @@ public abstract class Scene implements SoundListener
 	public static final int COLOR_LIGHTBLUE = 6;
 	public static final int COLOR_WHITE = 7;
 
-    public void toggleKey(int key, boolean isPressed)
-    {
-        keys[key] = isPressed;
-    }
+	public void toggleKey(int key, boolean isPressed)
+	{
+		keys[key] = isPressed;
+	}
 
-    public final void setSound(SonarSoundEngine sound)
-    {
-        sound.setListener(this);
-        this.sound = sound;
-    }
-    
-    public abstract void mouseClicked(MouseEvent me);
+	public final void setSound(SonarSoundEngine sound)
+	{
+		sound.setListener(this);
+		this.sound = sound;
+	}
 
-    public abstract void init();
+	public abstract void mouseClicked(MouseEvent me);
 
-    public abstract void tick();
+	public abstract void init();
 
-    public abstract void render(Graphics og, float alpha);
+	public abstract void tick();
+
+	public abstract void render(Graphics og, float alpha);
 }

@@ -24,12 +24,15 @@ public class UITextArea extends UIItem{
 		this.width = width;
 	}
 
+	@Override
 	public void next() {
 	}
 
+	@Override
 	public void prev() {
 	}
 
+	@Override
 	public void render(Graphics g) {
 		Graphics2D g2 = (Graphics2D)g;
 

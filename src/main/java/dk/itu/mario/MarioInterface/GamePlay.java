@@ -7,9 +7,9 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public class GamePlay implements Serializable {
-		
+
 	private static final long serialVersionUID = 1L;
-	
+
 	public int completionTime; //counts only the current run on the level, excluding death games
 	public int totalTime;//sums all the time, including from previous games if player died
 	public int jumpsNumber; // total number of jumps
@@ -55,7 +55,7 @@ public class GamePlay implements Serializable {
 	public int CannonBallKilled; //number of Cannon Ball Mario killed
 	public int JumpFlowersKilled; //number of Jump Flower Mario killed
 	public int ChompFlowersKilled; //number of Chomp Flower Mario killed
-	
+
 	public void write(String fileName){
 		ObjectOutputStream out = null;
 		try {
@@ -66,13 +66,13 @@ public class GamePlay implements Serializable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 	public static GamePlay read(String fileName){
 		FileInputStream fis = null;
-	    ObjectInputStream in = null;
-	    GamePlay gp =  null;
+		ObjectInputStream in = null;
+		GamePlay gp =  null;
 		try {
 			fis = new FileInputStream(fileName);
 			in = new ObjectInputStream(fis);
